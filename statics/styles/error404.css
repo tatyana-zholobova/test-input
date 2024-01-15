@@ -1,10 +1,11 @@
 * {
-  margin: 0;
   outline: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: Montserrat,sans-serif;
   padding: 0;
-  font-family: Montserrat,sans-serif
+  margin: 0;
+  border: none
 }
 html {
   scroll-behavior: smooth;
@@ -31,23 +32,21 @@ picture {
 img {
   display: block;
   width: 100%;
-  height: auto;
-  min-height: 1px
+  min-height: 1px;
+  vertical-align: top
 }
 li {
   list-style-type: none
 }
 a {
   color: inherit;
-  cursor: pointer;
-  text-decoration: none
+  cursor: pointer
 }
 button {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
-  cursor: pointer
+  user-select: none
 }
 .wrapper {
   position: relative;
@@ -139,143 +138,83 @@ button {
   font-style: normal;
   font-display: block
 }
-input[type=number] {
-  -moz-appearance: textfield
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: var(--font-oswald);
+  font-weight: 400
 }
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  display: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0
+a,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none
 }
-input[type=search],
-input[type=submit] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none
+aside,
+footer,
+header,
+legend,
+main,
+nav,
+section {
+  display: block
 }
-input[type=search]::-ms-clear {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit
+}
+ul,
+ul li {
+  list-style: none
+}
+img,
+svg {
+  max-width: 100%;
+  height: auto
+}
+address {
+  font-style: normal
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent
+}
+input::-ms-clear {
   display: none
 }
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
-  -webkit-appearance: none
+button,
+input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: 0 0;
+  cursor: pointer
 }
-input[type=range] {
-  -webkit-appearance: none;
-  width: 100%
-}
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none
-}
-input[type=range]:focus {
+button:active,
+button:focus,
+input:active,
+input:focus {
   outline: 0
 }
-input[type=range]::-ms-track {
-  width: 100%;
-  cursor: pointer;
-  background: 0 0;
-  border-color: transparent;
-  color: transparent
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0
 }
-.input {
-  display: block;
-  border: 1px solid #ebebeb;
-  width: 100%;
-  color: #001110;
-  -webkit-transition-property: border-color;
-  transition-property: border-color;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s
-}
-.input::-webkit-input-placeholder {
-  color: rgba(0,17,16,.5);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s
-}
-.input::-moz-placeholder {
-  color: rgba(0,17,16,.5);
-  -moz-transition-property: color;
-  transition-property: color;
-  transition-duration: .2s
-}
-.input:-ms-input-placeholder {
-  color: rgba(0,17,16,.5);
-  -ms-transition-property: color;
-  transition-property: color;
-  transition-duration: .2s
-}
-.input::-ms-input-placeholder {
-  color: rgba(0,17,16,.5);
-  -ms-transition-property: color;
-  transition-property: color;
-  transition-duration: .2s
-}
-.input::placeholder {
-  color: rgba(0,17,16,.5);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s
-}
-.input:disabled {
-  background-color: #e1e1e1;
-  color: rgba(0,17,16,.3);
-  pointer-events: none
-}
-input.input_error,
-input.input_error:focus,
-input.input_error:hover {
-  border: 1px solid #eb5757
-}
-.textarea {
-  display: block;
-  border: 1px solid #ebebeb;
-  width: 100%;
-  color: #001110;
-  -webkit-transition-property: border-color;
-  transition-property: border-color;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
-  resize: none
-}
-.textarea::-webkit-input-placeholder {
-  color: rgba(0,17,16,.5);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s
-}
-.textarea::-moz-placeholder {
-  color: rgba(0,17,16,.5);
-  -moz-transition-property: color;
-  transition-property: color;
-  transition-duration: .2s
-}
-.textarea:-ms-input-placeholder {
-  color: rgba(0,17,16,.5);
-  -ms-transition-property: color;
-  transition-property: color;
-  transition-duration: .2s
-}
-.textarea::-ms-input-placeholder {
-  color: rgba(0,17,16,.5);
-  -ms-transition-property: color;
-  transition-property: color;
-  transition-duration: .2s
-}
-.textarea::placeholder {
-  color: rgba(0,17,16,.5);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s
+label {
+  cursor: pointer
 }
 .link-red {
   text-decoration: none;
@@ -405,42 +344,6 @@ input.input_error:hover {
   }
   .button-red:not(.button-red:disabled):active {
     background-color: #e73737
-  }
-  .input:not(.input_error):hover {
-    border-color: #001110
-  }
-  .input:not(.input_error):hover::-webkit-input-placeholder {
-    color: rgba(0,17,16,.8)
-  }
-  .input:not(.input_error):hover::-moz-placeholder {
-    color: rgba(0,17,16,.8)
-  }
-  .input:not(.input_error):hover:-ms-input-placeholder {
-    color: rgba(0,17,16,.8)
-  }
-  .input:not(.input_error):hover::-ms-input-placeholder {
-    color: rgba(0,17,16,.8)
-  }
-  .input:not(.input_error):hover::placeholder {
-    color: rgba(0,17,16,.8)
-  }
-  .textarea:not(.input_error):hover {
-    border-color: #001110
-  }
-  .textarea:not(.input_error):hover::-webkit-input-placeholder {
-    color: rgba(0,17,16,.8)
-  }
-  .textarea:not(.input_error):hover::-moz-placeholder {
-    color: rgba(0,17,16,.8)
-  }
-  .textarea:not(.input_error):hover:-ms-input-placeholder {
-    color: rgba(0,17,16,.8)
-  }
-  .textarea:not(.input_error):hover::-ms-input-placeholder {
-    color: rgba(0,17,16,.8)
-  }
-  .textarea:not(.input_error):hover::placeholder {
-    color: rgba(0,17,16,.8)
   }
   .link-red {
     -webkit-transition-property: color;
